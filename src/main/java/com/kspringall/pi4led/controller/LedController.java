@@ -19,6 +19,11 @@ public class LedController {
         return "Hello Kimball!";
     }
 
+    @RequestMapping("/test")
+    public String greetingTest() {
+        return "Hello Test!";
+    }
+
     @RequestMapping("/light")
     public String light() {
         if (pin == null) {
